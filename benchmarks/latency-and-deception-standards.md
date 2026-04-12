@@ -1,9 +1,9 @@
-## 1. Introduction (The Objective)
+## 1. Introduction 
 "This document defines the operational metrics for validating the effectiveness and performance of Secure Design implementations in agentic systems. Security without performance is a bottleneck; performance without security is a vulnerability."
 
 ---
 
-## 2. Operational KPIs (Where you grapple with the numbers)
+## 2. Operational KPIs (Operational Performance Benchmarks)
 Here you define what a "healthy" agent is based on your tests:
 
 Target Latency (Baseline): < 10ms for in-flight telemetry processing.
@@ -14,7 +14,7 @@ Detection Fidelity Score (DFS): Ratio between false positives and threats neutra
 
 ---
 
-## 3. Active Deception Metrics (Your differentiator: Ghost Mode)
+## 3. Active Deception & Tactical Mitigation Metrics
 You introduce the concept of "Tactical Latency" as a defense metric:
 
 Honeypot Latency: Controlled injection of latency (e.g., 150ms) to exhaust attacker resources.
@@ -23,7 +23,7 @@ Deception Success Rate: Percentage of attackers who continue attempting to explo
 
 ---
 
-## 4. Reference Implementation Model (How-to)
+## 4. Implementation Guidelines
 In this section, you describe (without providing all the code) how to use OpenTelemetry Collector as the control point:
 
 Use of custom processors for Role Enforcement validation.
